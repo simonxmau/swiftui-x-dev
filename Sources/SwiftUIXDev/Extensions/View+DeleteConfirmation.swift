@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 extension View {
-    func onDeleteConfirmation(
+    public func onDeleteConfirmation(
         isPresented: Binding<Bool>,
         deleteAction: @escaping () -> Void
     ) -> some View {

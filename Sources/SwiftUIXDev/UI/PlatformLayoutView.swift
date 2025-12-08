@@ -30,7 +30,7 @@ struct PlatformLayoutView<iOSContent: View, DesktopContent: View>: View {
 extension View {
     /// 应用平台特定的布局修饰符
     /// iOS 独立，iPadOS 和 macOS 使用相同布局
-    func platformLayout(
+    public func platformLayout(
         iOS: @escaping (Self) -> some View,
         desktop: @escaping (Self) -> some View
     ) -> some View {
@@ -45,7 +45,7 @@ extension View {
     }
     
     /// 仅在 iPhone 上应用修饰符
-    func iPhoneOnly<Content: View>(@ViewBuilder _ modifier: (Self) -> Content) -> some View {
+    public func iPhoneOnly<Content: View>(@ViewBuilder _ modifier: (Self) -> Content) -> some View {
         if PlatformDetector.isiPhone {
             return AnyView(modifier(self))
         } else {
@@ -54,7 +54,7 @@ extension View {
     }
     
     /// 仅在 iPad 或 macOS 上应用修饰符
-    func desktopLike<Content: View>(@ViewBuilder _ modifier: (Self) -> Content) -> some View {
+    public func desktopLike<Content: View>(@ViewBuilder _ modifier: (Self) -> Content) -> some View {
         if PlatformDetector.isDesktopLike {
             return AnyView(modifier(self))
         } else {

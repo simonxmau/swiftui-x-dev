@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "swiftui-x-dev",
     platforms: [
-        .iOS(.v13),
-        .macOS(.v10_15),
+        .iOS(.v16),
+        .macOS(.v14),
         .tvOS(.v13),
         .watchOS(.v6)
     ],

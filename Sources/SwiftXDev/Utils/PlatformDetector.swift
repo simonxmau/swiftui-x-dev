@@ -1,6 +1,6 @@
 //
 //  PlatformDetector.swift
-//  swiftui-x-dev
+//  swift-x-dev
 //
 //  Created for platform-specific layout detection
 //

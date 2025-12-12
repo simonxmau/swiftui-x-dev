@@ -1,6 +1,6 @@
 //
 //  NodeOutlineGroup.swift
-//  swiftui-x-dev
+//  swift-x-dev
 //
 //  Created by Simon Mau on 2025/12/10.
 //  From: https://stackoverflow.com/questions/62832809/list-or-outlinegroup-expanded-by-default-in-swiftui

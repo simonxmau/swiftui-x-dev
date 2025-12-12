@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "swiftui-x-dev",
+    name: "swift-x-dev",
     platforms: [
         .iOS(.v16),
         .macOS(.v14),
@@ -14,19 +14,19 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SwiftUIXDev",
-            targets: ["SwiftUIXDev"]
+            name: "SwiftXDev",
+            targets: ["SwiftXDev"]
         ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SwiftUIXDev"
+            name: "SwiftXDev"
         ),
         .testTarget(
-            name: "SwiftUIXDevTests",
-            dependencies: ["SwiftUIXDev"]
+            name: "SwiftXDevTests",
+            dependencies: ["SwiftXDev"]
         ),
     ]
 )
